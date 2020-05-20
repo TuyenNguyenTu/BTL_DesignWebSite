@@ -134,6 +134,10 @@ header a:hover{
   width: 100px;
 
 }
+.linknone{
+  text-decoration: none;
+  color: #fff;
+}
 
 footer{
   padding: 20px;
