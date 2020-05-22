@@ -7,6 +7,8 @@
   <meta name="author" content="TuyenNguyenTu">
   <title>BTL Thiết kế webstie|Nguyễn Tự Tuyên - 1621050431</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="./css/fontaws.min.css">
 </head>
 
 <body>
@@ -43,6 +45,42 @@
 
   <section id="main">
     <div class="container">
+      <section class="main-header-login">
+        <form action="" method="post">
+          <div class="imgcontainer">
+            <img src="img/login1.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" class="txtUserName" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br>
+            <button type="submit" class="btnLogin">Login</button>
+            <br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn" onclick="cancelHandle()">Cancel</button>
+            <span class="psw"><a href="#"> Forgot password?</a></span>
+          </div>
+        </form>
+        <section class="section-other">
+          <div class="col">
+            <a href="#" class="fb btn" id="facebook">
+              <i class="fab fa-facebook-f"></i> &nbsp; Facebook
+            </a> &nbsp;
+            <a href="#" id="google" class="google btn"><i class="fab fa-google"></i>
+              </i> Google+
+            </a>
+          </div>
+        </section>
+      </section>
 
     </div>
   </section>
@@ -50,6 +88,11 @@
   <footer>
     <p>Nguyễn Tự Tuyên - 1621050431, Trường Đại học Mỏ - Địa chất, Copyright &copy; 2020</p>
   </footer>
+  <script>
+    function cancelHandle() {
+      window.location.href = "index.html"
+    }
+  </script>
 </body>
 
 </html>
